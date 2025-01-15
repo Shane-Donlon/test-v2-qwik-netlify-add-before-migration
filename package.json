@@ -15,7 +15,7 @@
     "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
-    "build.server": "vite build -c adapters/netlify-edge/vite.config.ts",
+    "build.server": "vite build -c adapters/netlify-edge/vite.config.mts",
     "build.types": "tsc --incremental --noEmit",
     "deploy": "netlify deploy --build",
     "dev": "vite --mode ssr",
@@ -29,6 +29,8 @@
   },
   "devDependencies": {
     "@netlify/edge-functions": "^2.0.0",
+    "@qwik.dev/core": "2.0.0-alpha.5",
+    "@qwik.dev/router": "2.0.0-alpha.5",
     "@types/eslint": "8.56.10",
     "@types/node": "20.14.11",
     "@typescript-eslint/eslint-plugin": "7.16.1",
@@ -40,9 +42,7 @@
     "typescript": "5.4.5",
     "undici": "*",
     "vite": "5.3.5",
-    "vite-tsconfig-paths": "^4.2.1",
-    "@qwik.dev/router": "2.0.0-alpha.5",
-    "@qwik.dev/core": "2.0.0-alpha.5"
+    "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {}
 }
